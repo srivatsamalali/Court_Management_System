@@ -1,0 +1,41 @@
+<table border="1" align ="center">
+
+    <thead>
+          
+          <tr>
+          <th>ID</th> 
+          <th>TYPE</th>
+          <th>SEMESTER</th>
+          <th>TOTAL PAID</th>
+          <th>DUE</th>
+          <th>DATE OF PAYMENT</th>
+          </tr>
+  
+    </thead>
+    <tbody>
+              
+      <tr *ngFor="let f of fee" >
+       
+              <td align="center" >
+                <h5>{{f.id}}</h5>
+              </td>
+              <td align= "center">
+                <h5>{{f.Type}}</h5>
+              </td>
+              <td align= "center">
+                <h5>{{f.Semester}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{f.TotalPaid}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{f.Due}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{f.DateofPayment}}</h5>
+              </td>
+              </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>

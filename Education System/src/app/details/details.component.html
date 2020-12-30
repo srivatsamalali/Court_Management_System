@@ -1,0 +1,47 @@
+<body>
+  <h2>Welcome, {{det.Name}}</h2>
+  <br>
+  <br>
+  <h4>Your Details</h4>
+  <table border="1" align ="center">
+
+    <thead>
+        
+      <tr>
+      <th>ID</th> 
+      <th>NAME</th>
+      <th>ADDRESS</th>
+      <th>SEMESTER</th>
+      <th>CONTACT NUMBER</th>
+      <th>EMAIL</th>
+      </tr>
+
+   </thead>
+    <tbody>
+              
+            <tr>
+              <td align="center" >
+                <h5>{{det.id}}</h5>
+              </td>
+              <td align= "center">
+                <h5>{{det.Name}}</h5>
+              </td>
+              <td align= "center">
+                <h5>{{det.Address}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{det.Semester}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{det.ContactNumber}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{det.Email}}</h5>
+              </td>
+              <td><button type="button" class="btn btn-dark btn-lg" (click)="onClickAttendance()"> Attendance</button></td>
+              <td><button type="button" class="btn btn-dark btn-lg" (click)="onClickFees()"> Fees</button></td>
+            <td><button type="button" class="btn btn-dark btn-lg" (click)="onClickResult()"> Result</button></td>
+              </tr>
+    </tbody>
+  </table>
+  </body>

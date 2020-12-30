@@ -1,0 +1,42 @@
+<table border="1" align ="center">
+
+    <thead>
+          
+          <tr>
+          <th>ID</th> 
+          <th>SUBJECT</th>
+          <th>TOTAL CLASSES</th>
+          <th>TOTAL CLASS ATTENDED</th>
+          <th>PERCENTAGE(%)</th>
+          <th>STATUS</th>
+          </tr>
+  
+    </thead>
+    <tbody>
+              
+      <tr *ngFor="let a of att" >
+       
+              <td align="center" >
+                <h5>{{a.id}}</h5>
+              </td>
+              <td align= "center">
+                <h5>{{a.Subject}}</h5>
+              </td>
+              <td align= "center">
+                <h5>{{a.TotalClasses}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{a.TotalClassAttended}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{a.Percentage}}</h5>
+              </td>
+              <td align= "center">
+                  <h5>{{a.Status}}</h5>
+              </td>
+            
+              </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>

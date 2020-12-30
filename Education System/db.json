@@ -1,0 +1,78 @@
+{
+  "_details": [
+    {
+      "id": 1,
+      "Name": "Sarayu",
+      "Address": "BBSR",
+      "Semester":8,
+      "ContactNumber":98654309280,
+      "Email":"sarayu@gmail.com"
+    },
+    {
+      "id": 2,
+      "Name": "Eswar",
+      "Address": "BBSR",
+      "Semester":3,
+      "ContactNumber":986543020080,
+      "Email":"eswar@gmail.com"
+    }
+  ],
+  "fees": [
+    {
+      "id": 1,
+      "Type": "Semester",
+      "Semester": 1,
+      "TotalPaid":50000,
+      "Due":100000,
+      "DateofPayment":"2020/11/10"
+    },
+    {
+      "id": 1,
+      "Type": "Registration",
+      "Semester": 1,
+      "TotalPaid":15000,
+      "Due":0,
+      "DateofPayment":"2020/11/10"
+
+    }
+  ],
+  "attendance": [{
+    "id":1,
+    "Subject": "Computer Science",
+    "TotalClasses":40,
+    "TotalClassAttended":20,
+    "Percentage":50,
+    "Status":"debarred"
+
+  },
+  {
+    "id":1,
+    "Subject": "Networking",
+    "TotalClasses":40,
+    "TotalClassAttended":20,
+    "Percentage":50,
+    "Status":"debarred"
+
+  }
+  ],
+  "result":[
+    {"id":1,
+      "Semester":4,
+      "DateofExamination":"2020/10/10",
+      "DateofResult":"2020/12/10",
+      "TotalCredit":10,
+      "GradeObtained":"B",
+      "Status":"Pass"
+    },
+    {
+      "id":1,
+      "Semester":5,
+      "DateofExamination":"2021/01/10",
+      "DateofResult":"2021/02/10",
+      "TotalCredit":10,
+      "GradeObtained":"B",
+      "Status":"Pass"
+
+    }
+  ]
+}

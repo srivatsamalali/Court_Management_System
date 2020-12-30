@@ -1,0 +1,10 @@
+
+
+
+<form [formGroup]="f">
+    <div class="form-group col-2">
+      <label for="exampleInputEmail1">Student ID</label>
+      <input type="text" class="form-control mb-2" placeholder="Enter Student ID" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="Id">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="onClick(f.value)">Submit</button>
+</form>
