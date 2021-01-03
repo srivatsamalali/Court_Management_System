@@ -14,6 +14,7 @@ export class DetailsComponent implements OnInit {
   det:any;
   Id:any;
   g:FormGroup;
+  fee:any;
 
   constructor(private cserv:CommonService,private router:Router, private route:ActivatedRoute) { }
 
@@ -21,6 +22,7 @@ export class DetailsComponent implements OnInit {
 
     this.Id=this.route.snapshot.params['Id'];
     this.getStudent();
+
   }
  getStudent(){
   this.Id =  localStorage.getItem("Id");
@@ -29,17 +31,17 @@ export class DetailsComponent implements OnInit {
     this.det=response
    })
  }
- onClickFees(){
+ onClickFee(){
+   this.Id=localStorage.getItem("Id");
+  this.router.navigate(["fees",this.Id]);
+ }
 
-
-  this.router.navigate(["fees"]);
-}
  onClickAttendance(){
-  this.router.navigate(["attendance"]);
+  this.router.navigate(["attendance",this.Id]);
 
  }
  onClickResult(){
-  this.router.navigate(["result"]);
+  this.router.navigate(["result",this.Id]);
 
  }
 

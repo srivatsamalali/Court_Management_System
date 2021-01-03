@@ -1,39 +1,40 @@
 <table border="1" align ="center">
 
     <thead>
-          
+
           <tr>
-          <th>ID</th> 
-          <th>TYPE</th>
-          <th>SEMESTER</th>
-          <th>TOTAL PAID</th>
-          <th>DUE</th>
-          <th>DATE OF PAYMENT</th>
+          <th>ID</th>
+          <th>SUBJECT</th>
+          <th>TOTAL CLASSES</th>
+          <th>TOTAL CLASS ATTENDED</th>
+          <th>PERCENTAGE(%)</th>
+          <th>STATUS</th>
           </tr>
-  
+
     </thead>
     <tbody>
-              
-      <tr *ngFor="let f of fee" >
-       
+
+      <tr>
+
               <td align="center" >
-                <h5>{{f.id}}</h5>
+                <h5>{{att.id}}</h5>
               </td>
               <td align= "center">
-                <h5>{{f.Type}}</h5>
+                <h5>{{att.Subject}}</h5>
               </td>
               <td align= "center">
-                <h5>{{f.Semester}}</h5>
+                <h5>{{att.TotalClasses}}</h5>
               </td>
               <td align= "center">
-                  <h5>{{f.TotalPaid}}</h5>
+                  <h5>{{att.TotalClassAttended}}</h5>
               </td>
               <td align= "center">
-                  <h5>{{f.Due}}</h5>
+                  <h5>{{att.Percentage}}</h5>
               </td>
               <td align= "center">
-                  <h5>{{f.DateofPayment}}</h5>
+                  <h5>{{att.Status}}</h5>
               </td>
+
               </tr>
     </tbody>
   </table>

@@ -26,9 +26,9 @@ import { ResultComponent } from './result/result.component';
     FormsModule,ReactiveFormsModule,
     RouterModule.forRoot([
       {path:"details", component:  DetailsComponent},
-      {path:"fees", component:  FeesComponent},
-      {path:"attendance", component:  AttendanceComponent},
-      {path:"result", component:ResultComponent},
+      {path:"fees/:Id", component:  FeesComponent},
+      {path:"attendance/:Id", component:  AttendanceComponent},
+      {path:"result/:Id", component:ResultComponent},
       {path:"",  redirectTo:"home" ,pathMatch:"full"},
       {path:"home",component:HomeComponent}
 

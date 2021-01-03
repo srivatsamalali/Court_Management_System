@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../common.service';
 
@@ -7,14 +8,16 @@ import { CommonService } from '../common.service';
   styleUrls: ['./attendance.component.css']
 })
 export class AttendanceComponent implements OnInit {
+  Id:any;
   att:any;
-  constructor(private aserv:CommonService) { }
+  constructor(private aserv:CommonService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.Id=this.route.snapshot.params['Id'];
     this.getAttendance();
   }
   getAttendance(){
-    this.aserv.getAttendanceDetails().subscribe((response)=>{
+    this.aserv.getAttendanceDetails(this.Id).subscribe((response)=>{
       this.att=response
     })
   }

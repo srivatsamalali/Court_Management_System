@@ -5,6 +5,7 @@ export class Details {
     Semester:string;
     ContactNumber:string;
     Email:string;
+
    constructor( Id:number,Name:string, Address:string, Semester:string, ContactNumber:string, Email:string) {
       this.Id=Id;
       this.Name=Name;
@@ -12,6 +13,7 @@ export class Details {
       this.Semester=Semester;
       this.ContactNumber=ContactNumber;
       this.Email=Email;
+
    }
 
 }

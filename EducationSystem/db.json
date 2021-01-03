@@ -46,7 +46,7 @@
 
   },
   {
-    "id":1,
+    "id":2,
     "Subject": "Networking",
     "TotalClasses":40,
     "TotalClassAttended":20,
@@ -65,7 +65,7 @@
       "Status":"Pass"
     },
     {
-      "id":1,
+      "id":2,
       "Semester":5,
       "DateofExamination":"2021/01/10",
       "DateofResult":"2021/02/10",

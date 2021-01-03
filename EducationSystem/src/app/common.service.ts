@@ -12,13 +12,13 @@ export class CommonService {
   getDetailsById(Id:any):Observable<any>{
     return this.httpClient.get<any>("http://localhost:3004/_details/"+Id);
 }
-getFees(){
-  return this.httpClient.get("http://localhost:3004/fees");
+getFees(Id:any):Observable<any>{
+  return this.httpClient.get<any>("http://localhost:3004/fees/"+Id);
 }
-getAttendanceDetails(){
-  return this.httpClient.get<any>("http://localhost:3004/attendance");
+getAttendanceDetails(Id:any):Observable<any>{
+  return this.httpClient.get<any>("http://localhost:3004/attendance/"+Id);
 }
-getResult(){
-  return this.httpClient.get<any>("http://localhost:3004/result");
+getResult(Id:any):Observable<any>{
+  return this.httpClient.get<any>("http://localhost:3004/result/"+Id);
 }
 }

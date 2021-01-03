@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../common.service';
 
@@ -9,13 +10,14 @@ import { CommonService } from '../common.service';
 export class ResultComponent implements OnInit {
   res:any;
 
-  constructor(private cserv:CommonService) { }
+  constructor(private cserv:CommonService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.Id=this.route.snapshot.params['Id'];
     this.getResults();
   }
 getResults(){
-  this.cserv.getResult().subscribe((response)=>{
+  this.cserv.getResult(this.Id).subscribe((response)=>{
     this.res=response
   })
 }
